@@ -1,0 +1,43 @@
+{
+  Common:
+  {
+    Transform:
+    {
+      Width: 28
+      Height: 24
+    }
+  }
+  NPC:
+  {
+    WalkingBehaviour:
+    {
+      WalkSpeed: 0.85
+      FrameCount: 3
+      FrameTime: 6
+      AnimationType: Alternate
+      IsClassic: false
+    }
+    SpawnController:
+    {
+      Stage: 1
+      Conditions:
+      [
+        {
+          Overworld: true
+          DayTime: true
+          Chance: 0.1
+        }
+      ]
+    }
+  }
+  Projectile:
+  {
+    GenericPet:
+    {
+      FrameCount: 3
+      FrameTime: 6
+      AnimationType: Alternate
+      IsClassic: false
+    }
+  }
+}
